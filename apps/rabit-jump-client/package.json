@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/rabit-jump-client",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Client application for Rabit Jump game",
   "scripts": {
     "clean": "npx rimraf dist && npx rimraf .parcel-cache",
