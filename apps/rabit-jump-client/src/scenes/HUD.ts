@@ -15,7 +15,7 @@ export class HUD extends Scene
     }
 
     create () {
-
+    
         //when the screen is resized, reset the hud
         this.onScreenResized(this.addHudElements);
         this.addHudElements();

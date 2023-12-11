@@ -17,7 +17,9 @@ const config: Phaser.Types.Core.GameConfig = {
             gravity: { y: 0 },
         }
     },
-    scene: [BootStrap, GameScene, HUD]
+    scene: [BootStrap]
 };
 
 const game = new Phaser.Game(config);
+game.scene.add('game', GameScene);
+game.scene.add('HUD', HUD);

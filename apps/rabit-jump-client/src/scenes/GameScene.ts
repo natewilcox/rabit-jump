@@ -7,6 +7,9 @@ import { ClientMessages, IRoomState, IServerObjectState, OBJECT_TYPES, ObjectTyp
 
 export class GameScene extends Scene
 {
+    DEFAULT_HEIGHT = 800;
+    DEFAULT_WIDTH = 800;
+    
     spriteByServerObjectId = new Map<string, Phaser.Physics.Arcade.Sprite>();
     serverObjects: Phaser.Physics.Arcade.Group;
     animatedTiles: any;
@@ -54,7 +57,8 @@ export class GameScene extends Scene
     }
 
     async create (config: { SERVER: ServerService<IRoomState, ClientMessages> }) {
-      
+        
+        this.configureResize(this);
         this.createMap(this);
         this.configureAnimations(this);
 
@@ -314,7 +318,7 @@ export class GameScene extends Scene
     private configureAnimations = (scene: GameScene) => {
 
     
-        scene.burstEmitter = this.add.particles('effects').createEmitter({
+        scene.burstEmitter = this.add.particles(0, 0, 'effects', {
             scale: { start: 1, end: 0 },
             blendMode: 'ADD',
             active: true,
@@ -322,12 +326,12 @@ export class GameScene extends Scene
             speed: 500,
             frequency: -1,
             gravityY: 1500
-        })
+        });
 
         scene.burstEmitter.stop();
         scene.burstEmitter.setVisible(false);
 
-        scene.flashEmitter = this.add.particles('flash').createEmitter({
+        scene.flashEmitter = this.add.particles(0, 0, 'flash', {
             speed: { min: -500, max: 500 },
             angle: { min: 0, max: 360 },
             scale: { start: 3, end: 1 },
@@ -339,7 +343,7 @@ export class GameScene extends Scene
         scene.flashEmitter.stop();
         scene.flashEmitter.setVisible(false);
 
-        scene.bodyPartsEmitter = scene.add.particles('effects').createEmitter({
+        scene.bodyPartsEmitter = scene.add.particles(0, 0, 'effects', {
             frame: { 
                 frames: [
                     'death/death-1.png',
@@ -398,4 +402,20 @@ export class GameScene extends Scene
             }
         });
     }
+
+    configureResize(scene: Scene) {
+
+        const resize = () => {
+            scene.setScreenSize(Math.min(this.DEFAULT_WIDTH, window.screen.width), Math.min(this.DEFAULT_HEIGHT, window.screen.height));
+        }
+    
+        window.addEventListener('resize', resize);
+        console.log(window.screen.width, this.scale.width)
+
+        //if the screen size is different than the scale size, resize
+        if(window.screen.width != this.scale.width || window.screen.height != this.scale.height) {
+            resize();
+        }
+    }
+
 }
