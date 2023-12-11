@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@natewilcox/rabit-jump-client",
   "version": "0.1.0",
   "description": "Client application for Rabit Jump game",

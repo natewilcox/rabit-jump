@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@natewilcox/rabit-jump-server",
   "version": "0.1.0",
   "description": "Server application for Rabit Jump",
