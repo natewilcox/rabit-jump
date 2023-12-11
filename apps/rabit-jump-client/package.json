@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "npx rimraf dist && npx rimraf .parcel-cache",
     "start": "parcel src/index.html -p 8000 --no-cache",
-    "build": "parcel build"
+    "build": "parcel build src/index.html --no-cache"
   },
   "author": "Nathan Wilcox",
   "license": "GPL-3.0",

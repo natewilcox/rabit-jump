@@ -1,8 +1,8 @@
 
-import { MobileGameScene } from '@natewilcox/mobile-game';
+import { Scene } from '@natewilcox/phaser-nathan';
 import 'dotenv/config'
 
-export class HUD extends MobileGameScene
+export class HUD extends Scene
 {
     fullscreen: Phaser.GameObjects.Image;
 
@@ -33,5 +33,19 @@ export class HUD extends MobileGameScene
         this.fullscreen.setScale(0.25, 0.25);
         this.fullscreen.setOrigin(1, 0);
         this.fullscreen.setAlpha(0.4);
+    }
+
+    addImage(x: number, y: number, frame: string, cb?: () => void) {
+
+        const img = this.add.image(x, y, frame);
+        img.setScale(0.5, 0.5);
+        img.setOrigin(0.5);
+
+        if(cb) {
+            img.setInteractive();
+            img.on('pointerdown', cb);
+        }
+
+        return img;
     }
 }
