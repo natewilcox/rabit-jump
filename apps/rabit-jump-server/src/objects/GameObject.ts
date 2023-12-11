@@ -1,6 +1,5 @@
-import { Client } from "colyseus";
 import { ServerObjectState } from "../rooms/schema/ServerObjectState";
-import { StateMachine } from "../utils/StateMachine";
+import { StateMachine } from "@natewilcox/nathan-core";
 
 export class GameObject extends Phaser.Physics.Arcade.Sprite {
 

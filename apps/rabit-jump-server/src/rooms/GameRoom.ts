@@ -1,11 +1,11 @@
 import { Room, Client } from "@colyseus/core";
 import { GameRoomState } from "./schema/GameRoomState";
 import { Dispatcher } from "@colyseus/command";
-import { ClientService } from "@natewilcox/services";
 import { SimulationEventEmitter, SimulationEvents, SimulationScene } from "../scenes/SimulationScene";
 import { JoinCommand } from "../commands/JoinCommand";
 import { LeaveCommand } from "../commands/LeaveCommand";
-import { ClientMessages } from "../types/ClientMessages";
+import { ClientService } from "@natewilcox/colyseus-nathan";
+import { ClientMessages } from "@natewilcox/rabit-jump-shared";
 
 export class GameRoom extends Room<GameRoomState> {
   
