@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/rabit-jump-shared",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Shared compoents for rabit-jump game",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",

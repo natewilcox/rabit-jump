@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@natewilcox/rabit-jump-server",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Server application for Rabit Jump",
   "scripts": {
     "clean": "npx rimraf dist && npx rimraf tsconfig.tsbuildinfo",
