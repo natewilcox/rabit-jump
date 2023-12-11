@@ -2,6 +2,7 @@
   "name": "@natewilcox/rabit-jump-server",
   "version": "0.1.1",
   "description": "Server application for Rabit Jump",
+  "main": "dist/main.js",
   "scripts": {
     "clean": "npx rimraf dist && npx rimraf tsconfig.tsbuildinfo",
     "build": "tsc",
