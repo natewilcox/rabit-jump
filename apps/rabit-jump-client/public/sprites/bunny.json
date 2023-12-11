@@ -1,0 +1,170 @@
+{
+	"textures": [
+		{
+			"image": "bunny.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 52,
+				"h": 356
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "ghost/ghost-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 50,
+						"h": 70
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 73,
+						"w": 50,
+						"h": 70
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 145,
+						"w": 50,
+						"h": 70
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "jump/jump-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 145,
+						"w": 50,
+						"h": 70
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.614286
+					}
+				},
+				{
+					"filename": "jump/jump-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 217,
+						"w": 50,
+						"h": 70
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.542857
+					}
+				},
+				{
+					"filename": "jump/jump-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 4,
+						"w": 50,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 289,
+						"w": 50,
+						"h": 66
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8735c2dfd23c1745abf9276ea65af561:cd051dedf34e55d62f10874574364878:8cd39669a6554f33ec81b353c76b4981$"
+	}
+}

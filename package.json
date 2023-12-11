@@ -1,0 +1,10 @@
+{
+  "name": "@natewilcox/rabit-jump",
+  "version": "0.0.1",
+  "description": "Rabit Jump - Jump through obstacles",
+  "workspaces": [
+    "libs/rabit-jump-shared",
+    "apps/rabit-jump-server",
+    "apps/rabit-jump-client"
+  ]
+}
