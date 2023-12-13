@@ -1,7 +1,9 @@
 import Phaser from "phaser";
+import * as data from "./version.json";
 import { BootStrap } from "./scenes/BootStrap";
 import { GameScene } from "./scenes/GameScene";
 import { HUD } from "./scenes/HUD";
+import { addBuildInfo } from "@natewilcox/version-meta";
 
 const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
@@ -23,3 +25,7 @@ const config: Phaser.Types.Core.GameConfig = {
 const game = new Phaser.Game(config);
 game.scene.add('game', GameScene);
 game.scene.add('HUD', HUD);
+
+
+// adds build info to the window object
+addBuildInfo(data);
