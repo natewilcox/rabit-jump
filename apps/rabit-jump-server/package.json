@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/rabit-jump-server",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Server application for Rabit Jump",
   "main": "dist/main.js",
   "scripts": {
